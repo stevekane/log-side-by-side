@@ -1,0 +1,27 @@
+{
+  "name": "side-by-side",
+  "version": "1.0.0",
+  "description": "Pretty print two similar data structures side by side ( visual comparision tool )",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevekane/side-by-side.git"
+  },
+  "keywords": [
+    "side-by-side",
+    "pretty",
+    "print"
+  ],
+  "author": "Steve Kane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevekane/side-by-side/issues"
+  },
+  "homepage": "https://github.com/stevekane/side-by-side#readme",
+  "devDependencies": {
+    "tape": "^4.6.0"
+  }
+}
