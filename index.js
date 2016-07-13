@@ -1,3 +1,5 @@
+var stringify = require('json-stringify-safe')
+
 function pad (minLen, item) {
   var out = item
 
@@ -8,8 +10,8 @@ function pad (minLen, item) {
 }
 
 module.exports = function sideBySide (space, obj, obj2) {
-  var strLines = JSON.stringify(obj, null, 2).split('\n')
-  var str2Lines = JSON.stringify(obj2, null, 2).split('\n')
+  var strLines = stringify(obj, null, 2).split('\n')
+  var str2Lines = stringify(obj2, null, 2).split('\n')
   var longestLineLength = strLines.reduce((p, c) => Math.max(c.length, p), 0) + space
   var out = []
 
